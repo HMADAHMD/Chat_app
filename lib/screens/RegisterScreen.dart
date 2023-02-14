@@ -1,5 +1,4 @@
 import 'package:chat_app/constants/constants.dart';
-import 'package:chat_app/screens/ChatScreen.dart';
 import 'package:chat_app/screens/LoginScreen.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -51,9 +50,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 TextFormField(
                   decoration: textFieldDecoration.copyWith(
                       labelText: 'Email',
-                      prefixIcon: Icon(
+                      prefixIcon: const Icon(
                         Icons.email,
-                        color: Constants().primaryColor,
+                        color: Constants.primaryColor,
                       )),
                   onChanged: (value) {
                     email = value;
@@ -72,9 +71,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 TextFormField(
                   decoration: textFieldDecoration.copyWith(
                       labelText: 'Password',
-                      prefixIcon: Icon(
+                      prefixIcon: const Icon(
                         Icons.lock,
-                        color: Constants().primaryColor,
+                        color: Constants.primaryColor,
                       )),
                   obscureText: true,
                   validator: (value) {

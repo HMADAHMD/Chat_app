@@ -19,6 +19,17 @@ var buttondecoration = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
 );
 
+var messageFieldDecoration = const InputDecoration(
+    hintText: 'send message',
+    filled: true,
+    fillColor: Color.fromARGB(255, 246, 255, 255),
+    focusedBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: Color.fromARGB(255, 36, 166, 164), width: 1)),
+    enabledBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: Color.fromARGB(255, 36, 166, 164), width: 1)));
+
 void nextScreen(context, page) {
   Navigator.push(context, MaterialPageRoute(builder: (context) => page));
 }

@@ -50,9 +50,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextFormField(
                   decoration: textFieldDecoration.copyWith(
                       labelText: 'Email',
-                      prefixIcon: Icon(
+                      prefixIcon: const Icon(
                         Icons.email,
-                        color: Constants().primaryColor,
+                        color: Constants.primaryColor,
                       )),
                   onChanged: (value) {
                     email = value;
@@ -71,9 +71,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextFormField(
                   decoration: textFieldDecoration.copyWith(
                       labelText: 'Password',
-                      prefixIcon: Icon(
+                      prefixIcon: const Icon(
                         Icons.lock,
-                        color: Constants().primaryColor,
+                        color: Constants.primaryColor,
                       )),
                   obscureText: true,
                   validator: (value) {
