@@ -54,6 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Icons.email,
                         color: Constants.primaryColor,
                       )),
+                  autocorrect: false,
                   onChanged: (value) {
                     email = value;
                   },
@@ -62,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                             .hasMatch(value!)
                         ? null
-                        : "Please enter a fucking email wisely";
+                        : "Please enter email wisely";
                   },
                 ),
                 const SizedBox(
@@ -75,6 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Icons.lock,
                         color: Constants.primaryColor,
                       )),
+                  autocorrect: false,
                   obscureText: true,
                   validator: (value) {
                     return (value!.length <= 6)

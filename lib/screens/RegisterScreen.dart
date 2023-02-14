@@ -54,6 +54,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Icons.email,
                         color: Constants.primaryColor,
                       )),
+                  autocorrect: false,
                   onChanged: (value) {
                     email = value;
                   },
@@ -75,6 +76,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Icons.lock,
                         color: Constants.primaryColor,
                       )),
+                  autocorrect: false,
                   obscureText: true,
                   validator: (value) {
                     return (value!.length <= 6)

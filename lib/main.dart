@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
         primaryColor: Color.fromARGB(255, 36, 166, 164),
         scaffoldBackgroundColor: Colors.white,
       ),
-      initialRoute: ChatScreen.id,
+      initialRoute: LoginScreen.id,
       routes: {
         LoginScreen.id: (context) => LoginScreen(),
         RegisterScreen.id: (context) => RegisterScreen(),
